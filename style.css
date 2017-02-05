@@ -475,8 +475,19 @@ template {
   display: none;
 }
 /*Font size general*/
-p {
-  font-size: 1.2rem;
+html {
+  font-size: 1em;
+}
+@media (min-width: 25em) { /* 400px */
+  html {
+    font-size: calc(1em + (1.6 - 1) * (100vw - 25em) / (100 - 25));
+  }
+}
+@media (min-width: 100em) { /* 1600px */
+  html {
+    font-size: 1.6em;
+  }
+
 }
 .site {
     background-image: url("images/carochin-background.png");
@@ -522,24 +533,24 @@ a.skip-link.screen-reader-text {
   /*padding: 0;*/
 }
 .site-branding p:first-child {
-  font-size: 4rem;
+  font-size: 2.5rem;
   margin-bottom: 0;
   margin-top: 0;
   font-family: 'Barrio', cursive;
 }
 @media (min-width: 25em) { /* 400px */
-  /*.site-branding p:first-child {
-    font-size: calc(1.5rem + (3 - 1) * (100vw - 25) / (100 - 25));
-  }*/
+  .site-branding p:first-child {
+    font-size: calc(2.5rem + (3 - 2.5) * (100vw - 25) / (100 - 25));
+  }
 }
 
 @media (min-width: 100em) { /* 1600px */
   .site-branding p:first-child {
-    /*font-size: 3rem;*/
+    font-size: 3rem;
   }
 }
 .site-branding p:last-child {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: 'Lobster', cursive;
   margin-bottom: 0;
   margin-top: 0;
@@ -549,22 +560,25 @@ a.skip-link.screen-reader-text {
   .site-branding {
     max-width: 100%;
     display: flex;
+    flex-wrap: wrap;
   }
   .site-branding p:last-child {
     align-self: center;
-    padding-left: 4rem;
+    padding-left: 1rem;
   }
 }
 @media (min-width: 25em) { /* 400px */
-  /*.site-branding p:last-child {
-    font-size: calc(1rem + (1.5 - 1) * (100vw - 25) / (100 - 25));
-  }*/
+  .site-branding p:last-child {
+    font-size: calc(1.2rem + (1.5 - 1.2) * (100vw - 25) / (100 - 25));
+    padding-left: calc(1rem + (4 - 1) * (100vw - 25) / (100 - 25));
+  }
 }
 
 @media (min-width: 100em) { /* 1600px */
-  /*.site-branding p:last-child {
+  .site-branding p:last-child {
     font-size: 1.5rem;
-  }*/
+    padding-left: 4rem;
+  }
 }
 .menu-toggle {
   display: none;
@@ -577,7 +591,7 @@ a.skip-link.screen-reader-text {
   /*padding: 0;*/
 }
 .social-links-menu li {
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-right: 2rem;
   background: #AFBFD5;
   border: 2px solid #6E7AA3;
@@ -587,6 +601,17 @@ a.skip-link.screen-reader-text {
 }
 .social-links-menu li:last-child {
   margin-right: 0;
+}
+@media (min-width: 25em) { /* 400px */
+  .social-links-menu li {
+    font-size: calc(1rem + (1.5 - 1) * (100vw - 25) / (100 - 25));
+  }
+}
+
+@media (min-width: 100em) { /* 1600px */
+  .social-links-menu li {
+    font-size: 1.5rem;
+  }
 }
 .menu-top-menu-container {
   /*padding: 0;*/
