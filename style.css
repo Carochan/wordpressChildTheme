@@ -11,7 +11,7 @@
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
  Text Domain:  twenty-fifteen-child
 */
-@import url('https://fonts.googleapis.com/css?family=Barrio|Lobster');
+@import url('https://fonts.googleapis.com/css?family=Barrio|Lobster|Pangolin');
 
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 
@@ -477,6 +477,7 @@ template {
 /*Font size general*/
 html {
   font-size: 1em;
+  font-family: 'Pangolin', cursive;
 }
 @media (min-width: 25em) { /* 400px */
   html {
@@ -628,14 +629,15 @@ ul.social-links-menu {
 /*Styling Home*/
 .content-area {
   display: flex;
-  margin: auto;
+  flex-wrap: wrap;
   justify-content: space-around;
+  padding: 0.5rem;
 }
 .entry-title {
   font-family: 'Lobster', cursive;
 }
 .entry-content {
-  max-width: 40rem;
+  max-width: 30rem;
   margin: auto;
 }
 
@@ -644,9 +646,11 @@ ul.social-links-menu {
   display: none;
 }
 .content-bottom-widgets {
-  max-width: 20rem;
+  width: 15rem;
+  margin-left: auto;
+  max-width: 100%;
   background: #F5E1ED;
   max-width: 20rem;
   text-align: center;
-  align-self: center;
+  align-self: flex-start;
 }
