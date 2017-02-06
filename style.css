@@ -527,10 +527,15 @@ a.skip-link.screen-reader-text {
 }
 .site-header-main {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: baseline;
   flex-wrap: wrap;
   /*padding: 0;*/
+}
+@media (min-width: 60em) {
+  .site-header-main {
+    justify-content: space-between;
+  }
 }
 .site-branding {
   display: flex;
