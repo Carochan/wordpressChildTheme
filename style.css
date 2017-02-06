@@ -490,8 +490,7 @@ html {
 
 }
 .site {
-    background-image: url("images/carochin-background.png");
-    background-repeat: no-repeat;
+    background-color: #F3F3ED;
  }
  ul li {
   list-style: none;
@@ -596,7 +595,8 @@ a.skip-link.screen-reader-text {
   background: #AFBFD5;
   border: 2px solid #6E7AA3;
   border-radius: 10% / 50%;
-  padding: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   font-family: 'Lobster', cursive;
 }
 .social-links-menu li:last-child {
