@@ -670,9 +670,6 @@ a.skip-link.screen-reader-text {
   background: #F5E1ED;
   text-align: center;
   align-self: flex-start;
-  padding: 0.5rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 .widget-title {
   margin: 0;
