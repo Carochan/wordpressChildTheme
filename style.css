@@ -643,12 +643,26 @@ a.skip-link.screen-reader-text {
 }
 .entry-content {
   max-width: 30rem;
-  /*margin: auto;*/
+}
+.entry-content p {
+  line-height: 1.5;
 }
 
 .post-edit-link,
  .post-edit-link .screen-reader-text {
   display: none;
+}
+
+/*Styling widgets*/
+
+.widget-area section:nth-child(odd) {
+  background: #CF9FBC;
+  padding-top: 0.5rem;
+  padding-bottom: 1em;
+}
+.widget-area section:nth-child(even) {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5em;
 }
 .content-bottom-widgets {
   width: 15rem;
@@ -667,11 +681,15 @@ a.skip-link.screen-reader-text {
 }
 .widget_archive ul {
   margin: 0;
-  margin-bottom: 0.5rem;
+  /*margin-bottom: 0.5rem;*/
   padding: 0;
 }
-.textwidget {
+.textwidget p {
+  margin: 0;
   margin-bottom: 0.5rem;
+}
+.textwidget p:last-child {
+  margin-bottom: 0;
 }
 #wp-calendar {
   margin: auto;
@@ -682,16 +700,6 @@ a.skip-link.screen-reader-text {
   background: #F5E1ED;
   text-align: center;
 }
-.widget-area section:nth-child(odd) {
-  background: #CF9FBC;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5em;
-}
-.widget-area section:nth-child(even) {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5em;
-}
-
 
 /*Styling the footer*/
 
